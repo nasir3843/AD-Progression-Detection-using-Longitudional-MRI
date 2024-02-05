@@ -14,18 +14,17 @@ Alzheimer's disease (AD) is a neurological illness that causes cognitive impairm
 ## Proposed Framework:
 In this study, we propose a framework that uses a deep 3D CNN followed by a bidirectional recurrent neural network (3D-CNN-BRNN) to predict the progression of AD. We optimize a hybrid DL model that combines the capabilities of 3D CNNs, recurrent neural networks (RNNs), and feed-forward neural networks, outperforming models in previous studies. Our architecture relies on longitudinal 3D MRI volumes recorded over three time steps (BL, month 6 (M06), and month 12 (M12)). Given these data, our model can predict the medical condition of a patient three years later (i.e., at month 48 (M48)). The designed framework is an end-to-end DL model in which the 3D CNN module captures inter- and intra-slice features of 3D volumes by analyzing a patient’s time-series volumes to produce a latent representation of convolutional features. Unlike previous studies, the BRNN module was precisely designed to track inter-volumetric relationship features extracted from a 3D CNN module that evolves over different time steps. Furthermore, we also studied the effect of fusing other critical modalities, such as demographic and cognitive biomarkers recorded at the BL, with the deep features extracted from the 3D-CNN-BRNN model for AD progression detection. Medical experts are interested in determining reasons for specific medical decisions. XAI helps models elicit understandable explanations of their output to different audiences. To the best of our knowledge, the time-series visual explainability of 3D MRI neuroimages has not been explored in the literature on AD. After optimizing the DL-based model to achieve its best performance, we extended the model to provide time-series explainability using visual representations over 3D images to further justify the model’s decision. This module tracks the regions in the brain tissue over time to help the model recognize patients with AD. The proposed approach addresses both issues by choosing the guided Grad-CAM, which provides voxel-level activation maps as we go through each time step of the 2D MRI slices. 
 
-
 ## Work flow:
 <img src="images/main_framework.png" width="900">
 
-## Activated brain regions in longitudional MRI data
+## Activated brain regions in longitudional 3D MRI
 <img src="images/ExplainabilityFigure.png" width="900">
 
 ## Data prepration:
-Please save the MRI ".npy" data into CN and AD folders, respectively. You can use the "data preprocessing/Baseline_volumes.py" for the baseline or "data preprocessing/BaselineMRI + M06MRI_volumes (two_timesteps).py" or BaselineMRI + M06MRI + M12MRI_volumes (three_timesteps).py" to prepare the data for multiple timesteps accordingly.
+Please save the MRI ".npy" data into CN and AD folders. Use "data preprocessing/Baseline_volumes.py" for the baseline, "data preprocessing/BaselineMRI + M06MRI_volumes.py" for two timesteps, and "BaselineMRI + M06MRI + M12MRI_volumes.py" for three timesteps to prepare the data for multiple timesteps.
 
 ## Training-Testing:
-After data preparation, any model (Proposed network, 3DVGG, 3DResNet) with any data combination can be trained and test with the provided code. Such as code for traininig-testing  proposed network with the baseline MRI data can be found in directory "ProposedNet/ProposedNet_at_BaselineMRI.py".  
+After data preparation, any model (Proposed network, 3DVGG, 3DResNet) with any data combination can be trained and tested with the provided code. For example, the code for training and testing the proposed network with the baseline MRI data can be found in the directory "ProposedNet/ProposedNet_at_BaselineMRI.py". 
 
 
 ## Citation
