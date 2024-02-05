@@ -28,8 +28,7 @@ After data preparation, any model (Proposed network, 3DVGG, 3DResNet) with any d
 
 
 ## Citation
-We would appreciate if you consider citing our work when using our code.
-
+Please consider citing our work.
 ```bibtex
 @article{rahim2023prediction,
   title={Prediction of Alzheimer's progression based on multimodal Deep-Learning-based fusion and visual Explainability of time-series data},
