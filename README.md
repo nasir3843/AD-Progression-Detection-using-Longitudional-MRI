@@ -32,7 +32,7 @@ Please consider citing our work.
 ```bibtex
 @article{rahim2023prediction,
   title={Prediction of Alzheimer's progression based on multimodal Deep-Learning-based fusion and visual Explainability of time-series data},
-  author={Rahim, Nasir and El-Sappagh, Shaker and Ali, Sajid and Muhammad, Khan and Del Ser, Javier and Abuhmed, Tamer},
+  author={Nasir Rahim, Shaker El-Sappagh, Sajid Ali, Khan Muhammad, Javier Del Ser, and Tamer Abuhmed},
   journal={Information Fusion},
   volume={92},
   pages={363--388},
