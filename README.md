@@ -1,5 +1,5 @@
 ## Alzheimer disease progression detection from longitudional MRI
-This is the Pytorch implementation of the paper "Alzheimer’s disease progression detection based on multimodal deep learning model and visual explainability of time series data". 
+This is the PyTorch implementation of the paper titled "Alzheimer’s disease progression detection based on multimodal deep learning model and visual explainability of time series data. 
 
 ## Prerequisites:
 * [Python3](https://www.python.org/)
@@ -31,7 +31,12 @@ After data preparation, any model (Proposed network, 3DVGG, 3DResNet) with any d
 We would appreciate if you consider citing our work when using our code.
 
 ```bibtex
-@article{RAHIM2023363,
-title = {Prediction of Alzheimer's progression based on multimodal Deep-Learning-based fusion and visual Explainability of time-series data},
-journal = {Information Fusion},
-volume = {92},
+@article{rahim2023prediction,
+  title={Prediction of Alzheimer's progression based on multimodal Deep-Learning-based fusion and visual Explainability of time-series data},
+  author={Rahim, Nasir and El-Sappagh, Shaker and Ali, Sajid and Muhammad, Khan and Del Ser, Javier and Abuhmed, Tamer},
+  journal={Information Fusion},
+  volume={92},
+  pages={363--388},
+  year={2023},
+  publisher={Elsevier}
+}
