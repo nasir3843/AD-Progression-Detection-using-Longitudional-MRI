@@ -16,7 +16,7 @@ In this study, we propose a framework that uses a deep 3D CNN followed by a bidi
 
 
 ## Work flow:
-<img src="images/workflow.png" width="710">
+<img src="images/main_framework.png" width="900">
 
 ## Activated brain regions in longitudional MRI data
 <img src="images/ExplainabilityFigure.png" width="700">
