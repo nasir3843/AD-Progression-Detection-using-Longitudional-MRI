@@ -19,7 +19,7 @@ In this study, we propose a framework that uses a deep 3D CNN followed by a bidi
 <img src="images/main_framework.png" width="900">
 
 ## Activated brain regions in longitudional MRI data
-<img src="images/ExplainabilityFigure.png" width="700">
+<img src="images/ExplainabilityFigure.png" width="900">
 
 ## Data prepration:
 Please save the MRI ".npy" data into CN and AD folders, respectively. You can use the "data preprocessing/Baseline_volumes.py" for the baseline or "data preprocessing/BaselineMRI + M06MRI_volumes (two_timesteps).py" or BaselineMRI + M06MRI + M12MRI_volumes (three_timesteps).py" to prepare the data for multiple timesteps accordingly.
